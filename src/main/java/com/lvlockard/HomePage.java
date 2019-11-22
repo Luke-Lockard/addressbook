@@ -26,5 +26,6 @@ public class HomePage extends WebPage {
 		add(entryFormPanel = new EntryFormPanel("entryFormPanel"));
 		add(contactsTablePanel = new ContactsTablePanel("contactsTablePanel"));
 		add(footerPanel = new FooterPanel("footerPanel"));
+		Redis.testServerConnection();
 	}
 }
