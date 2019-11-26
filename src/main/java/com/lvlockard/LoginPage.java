@@ -8,6 +8,7 @@ public class LoginPage extends WebPage {
 
     public LoginPage(final PageParameters parameters) {
         super(parameters);
+
         add(new LoginForm("loginForm"));
     }
 }

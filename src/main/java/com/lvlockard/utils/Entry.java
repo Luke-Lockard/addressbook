@@ -1,4 +1,4 @@
-package com.lvlockard;
+package com.lvlockard.utils;
 
 public class Entry {
 
@@ -8,7 +8,7 @@ public class Entry {
     private String address;
     private String phoneNumber;
 
-    public void Entry(String firstName, String lastName, String email, String address, String phoneNumber) {
+    public Entry(String firstName, String lastName, String email, String address, String phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -54,5 +54,15 @@ public class Entry {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public void displayEntry() {
+        System.out.println("Entry:\n" +
+                "\t" + this.getFirstName() +
+                "\t" + this.getLastName() +
+                "\t" + this.getEmail() +
+                "\t" + this.getAddress() +
+                "\t" + this.getPhoneNumber()
+        );
     }
 }

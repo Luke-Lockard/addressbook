@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>AddressBook</title>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link href="./LoginPage.css" rel="stylesheet">
+</head>
+<body class="text-center">
+
+    <form id="registerForm" class="form-signin" wicket:id="registerForm">
+        <h1 class="h3 mb-3 font-weight-normal">Sign Up</h1>
+        <div wicket:id="registeredStatus"></div>
+        <label for="email" class="sr-only">Email</label>
+        <input type="text" class="form-control" id="email" wicket:id="email" placeholder="Email address" required autofocus/>
+        <label for="password" class="sr-only">Password</label>
+        <input type="password" class="form-control" id="password" wicket:id="password" placeholder="Password" required/>
+        <label for="confirm-password" class="sr-only">Confirm Password</label>
+        <input type="password" class="form-control" id="confirm-password" wicket:id="confirmPassword" placeholder="Confirm password" required />
+        <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+        <div class="mt-5 mb-3">
+            <span>Already have an account?</span>
+            <button type="button" class="btn btn-link" wicket:id="loginLink">Log In</button>
+        </div>
+    </form>
+
+
+</body>
+</html>

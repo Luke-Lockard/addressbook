@@ -1,5 +1,7 @@
 package com.lvlockard;
 
+
+import de.agilecoders.wicket.core.Bootstrap;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
 
@@ -30,5 +32,6 @@ public class WicketApplication extends WebApplication
 		super.init();
 
 		// add your configuration here
+		Bootstrap.install(this);
 	}
 }

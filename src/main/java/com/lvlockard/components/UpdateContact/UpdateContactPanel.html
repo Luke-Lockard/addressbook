@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <!--<title>Title</title>-->
+</head>
+<body>
+    <wicket:panel>
+        <div class="container">
+            <form id="update-entry" wicket:id="updateEntry">
+                <fieldset>
+                    <legend>Update Contact</legend>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" wicket:id="firstName" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" wicket:id="lastName" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" wicket:id="email" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" wicket:id="address" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" id="phoneNumber" wicket:id="phoneNumber" class="form-control" />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Update</button>
+
+                </fieldset>
+            </form>
+        </div>
+    </wicket:panel>
+</body>
+</html>

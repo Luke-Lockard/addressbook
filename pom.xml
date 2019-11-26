@@ -24,7 +24,6 @@
 	<artifactId>addressbook</artifactId>
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
-		<!-- TODO project name  -->
 	<name>Address Book</name>
 	<description>Address Book application for CFM</description>
 	<!--
@@ -110,10 +109,13 @@
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
+
+		<!-- Bootstrap -->
 		<dependency>
-			<groupId>redis.clients</groupId>
-			<artifactId>jedis</artifactId>
-			<version>3.1.0</version>
+			<groupId>de.agilecoders.wicket</groupId>
+			<artifactId>wicket-bootstrap-core</artifactId>
+			<version>4.0.0-M3</version>
+			<!--<type>bundle</type>-->
 		</dependency>
 
 	</dependencies>

@@ -6,14 +6,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
 		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
-		<script src="https://kit.fontawesome.com/8f475c3633.js" crossorigin="anonymous"></script>
+
+		<style>
+			.form-group {
+				display: inline-block;
+			}
+		</style>
 	</head>
 	<body>
-		<div id="header" wicket:id="headerPanel">header</div>
-		<div id="body">
-			<section id="entry-form" wicket:id="entryFormPanel">Entry Form</section>
-			<section id="contacts-table" wicket:id="contactsTablePanel">Contacts Table</section>
-		</div>
-		<div id="footer" wicket:id="footerPanel">footer</div>
+	<div wicket:id="headerPanel">header</div>
+	<div wicket:id="addContactPanel">add contact</div>
+	<br>
+	<br>
+	<div wicket:id="contactListPanel">contact list</div>
+	<br>
+	<br>
+	<!--<div wicket:id="updateContactPanel">update contact</div>-->
 	</body>
 </html>
